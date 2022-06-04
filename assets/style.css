@@ -366,6 +366,9 @@ li {
     .testimonials {
         width: 70%;
     }
+    .contact {
+        padding-bottom: 0rem;
+    }
 
     hr {
         width: 80%;
