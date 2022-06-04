@@ -1,0 +1,379 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.page_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+hr {
+    border-color: #3b3b3b;
+    border-width: 1px;
+    width: 90%;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem 0rem;
+}
+
+.header {
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: fixed;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), white);
+    z-index: 1;
+    overflow: auto;
+}
+
+.bitwebLogo {
+    width: 5rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    position: relative;
+    border-radius: 0.3rem;
+}
+
+.navBarDesktop {
+    display: none;
+}
+
+.navBarMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-column: 2;
+    width: 100%;
+    padding-top: 0rem;
+}
+.navItemMobile {
+    object-fit: cover;
+    width: 2rem;
+    filter: saturate(0);
+}
+
+.welcomeContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    top: 8rem;
+    width: 100%;
+}
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: welcomebanner;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcomebanner {
+    25% {
+        box-shadow: 0px 0px 5px #414141;
+    }
+    100% {
+        box-shadow: -5px 5px 10px #414141;
+    }
+}
+
+.welcome h1 {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+.welcome h3 {
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+}
+.welcome p {
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.mainContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 10rem 0rem 0rem 0rem;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    transition: 0.3s;
+    text-align: right;
+    background-image: linear-gradient(0deg, #beecc1, rgba(255, 255, 255, 0.5));
+}
+.main h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.main p {
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.servicesContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 0rem 0rem 1rem 0rem;
+    width: 100%;
+}
+.services {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0rem;
+    background-image: linear-gradient(180deg, #beecc1, rgba(255, 255, 255, 0.5));
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.serviceWidget {
+    border-radius: 50rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.7rem;
+    border: 2px solid #414141;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transition: 0.3s;
+}
+:hover.serviceWidget {
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.tContainer {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+.testimonials {
+    width: 90%;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-image: linear-gradient(0deg, transparent, rgba(255, 255, 255, 1));
+}
+
+.contactContainer {
+    position: static;
+    bottom: 0px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 1rem 0rem 0rem 0rem;
+    width: 100%;
+}
+.contact {
+    width: 90%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: white;
+}
+.link {
+    color: #005B06;
+}
+:hover.link {
+    text-decoration: none;
+}
+.contact h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.contact p {
+    font-size: 1rem;
+    padding: 1rem;
+}
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.servicesCont1 {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.services1 {
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.services1 h2 {
+    padding: 1rem;
+}
+.services1 p {
+    padding: 1rem;
+}
+
+.servicesCont2 {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.services2 {
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: #414141;
+    text-align: right;
+    color: white;
+}
+.services2 h2 {
+    padding: 1rem;
+}
+.services2 p {
+    padding: 1rem;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+}
+:hover.icon {
+    filter: invert(100%);
+}
+
+.formContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contactform {
+    position: relative;
+    margin-top: 7rem;
+    width: 90%;
+}
+
+@media screen and (min-width: 1100px) {
+    .header {
+        grid-template-columns: 20% 60% 20%;
+        position: absolute;
+    }
+    .bitwebLogo {
+        width: 10%;
+        position: fixed;
+        box-shadow: -5px 5px 10px #414141;
+        transition: 0.3s;
+    }
+    :hover.bitwebLogo {
+        box-shadow: 0px 0px 5px black;
+    }
+
+    .navBarDesktop {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        font-weight: 400;
+        grid-column: 2;
+    }
+    :hover.navBarDesktop {
+        font-weight: 700;
+    }
+
+    .navBarMobile {
+        display: none;
+    }
+    
+    .navItem {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0.5rem 2rem;
+        color: #3b3b3b;
+        transition: 0.3s;
+    }
+    :hover.navItem {
+        border-bottom: 2px solid #005B06;
+        color: #000000;
+        font-weight: 900;
+        background-image: linear-gradient(0deg, #beecc1, #ffffff);
+        padding-bottom: 0.6rem;
+    }
+    .welcome {
+        width: 70%;
+    }
+    .main {
+        width: 70%;
+    }
+
+    .services {
+        width: 70%;
+        flex-direction: row;
+    }
+    :hover.services {
+        font-weight: 700;
+    }
+    .serviceWidget {
+        width: 70%;
+    }
+
+    .testimonials {
+        width: 70%;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .services1 {
+        width: 70%;
+    }
+    .services2 {
+        width: 70%;
+    }
+}
