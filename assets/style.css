@@ -188,12 +188,12 @@ li {
 }
 
 .contactContainer {
-    position: static;
+    position: absolute;
     bottom: 0px;
     justify-content: center;
     justify-items: center;
     display: flex;
-    margin: 1rem 0rem 4rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
     width: 100%;
 }
 .contact {
