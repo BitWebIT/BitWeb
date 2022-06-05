@@ -41,6 +41,7 @@ li {
     margin: 0.5rem 0rem 0.5rem 0.5rem;
     position: relative;
     border-radius: 0.3rem;
+    box-shadow: 0px 0px 5px #414141;
 }
 
 .navBarDesktop {
@@ -124,7 +125,13 @@ li {
     border-top-left-radius: 0.5rem;
     transition: 0.3s;
     text-align: right;
-    background-image: linear-gradient(0deg, #beecc1, rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(0deg, #767e78, rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 0px 5px #414141;
+    padding: 0rem 0rem 2rem 0rem;
+}
+.main div {
+    display: flex;
+    flex-direction: column;
 }
 .main h1 {
     font-size: 1.5rem;
@@ -133,25 +140,6 @@ li {
 .main p {
     font-size: 1rem;
     padding: 0rem 1rem 1rem 1rem;
-}
-
-.servicesContainer {
-    position: relative;
-    justify-content: center;
-    justify-items: center;
-    display: flex;
-    margin: 0rem 0rem 1rem 0rem;
-    width: 100%;
-}
-.services {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem 0rem;
-    background-image: linear-gradient(180deg, #beecc1, rgba(255, 255, 255, 0.5));
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
 }
 
 .serviceWidget {
@@ -167,7 +155,8 @@ li {
     transition: 0.3s;
 }
 :hover.serviceWidget {
-    background-color: white;
+    background-color: #005B06;
+    color: white;
     font-size: 1.1rem;
     font-weight: 700;
 }
@@ -184,7 +173,7 @@ li {
     width: 90%;
     border-radius: 0.5rem;
     text-align: center;
-    background-image: linear-gradient(0deg, transparent, rgba(255, 255, 255, 1));
+    background-image: linear-gradient(0deg, transparent, rgb(232, 250, 229));
 }
 
 .contactContainer {
@@ -351,14 +340,10 @@ li {
     .main {
         width: 70%;
     }
-
-    .services {
-        width: 70%;
+    .main div {
         flex-direction: row;
     }
-    :hover.services {
-        font-weight: 700;
-    }
+ 
     .serviceWidget {
         width: 70%;
     }
