@@ -33,7 +33,7 @@ li {
     position: fixed;
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), white);
     z-index: 1;
-    overflow: auto;
+    overflow:auto;
 }
 
 .bitwebLogo {
@@ -186,9 +186,7 @@ li {
     width: 100%;
 }
 .contact {
-    width: 90%;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    width: 100%;
     background-color: white;
     padding-bottom: 5rem;
 }
@@ -353,6 +351,9 @@ li {
     }
     .contact {
         padding-bottom: 0rem;
+        width: 90%;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
     }
 
     hr {
