@@ -13,6 +13,26 @@ html {
     background-size: cover;
     overflow: auto;
 }
+.page_container-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    animation-name: pagecontainermodal;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes pagecontainermodal {
+    100% {
+        filter: blur(2px);
+    }
+}
 
 hr {
     border-color: #3b3b3b;
@@ -159,6 +179,7 @@ li {
     color: white;
     font-size: 1.1rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .tContainer {
@@ -287,6 +308,69 @@ li {
     width: 90%;
 }
 
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: modalanim;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+    opacity: 0;
+    top: -100px;
+  }
+  @keyframes modalanim {
+      100% {
+        box-shadow: -5px 5px 10px black;
+        top: 0px;
+        opacity: 1;
+      }
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    position: relative;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    right: 0rem;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+      display: grid;
+      grid-template-columns: 95% 5%;
+  }
+
+
 @media screen and (min-width: 1100px) {
     .header {
         grid-template-columns: 20% 60% 20%;
@@ -321,12 +405,12 @@ li {
         padding: 0.5rem 2rem;
         color: #3b3b3b;
         transition: 0.3s;
+        border-bottom: 2px solid transparent;
     }
     :hover.navItem {
         border-bottom: 2px solid #005B06;
         color: #000000;
         font-weight: 900;
-        background-image: url("../Images/Nav btn BG.png");
         padding-bottom: 0.6rem;
     }
     .welcome {

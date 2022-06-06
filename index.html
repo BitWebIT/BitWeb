@@ -12,7 +12,7 @@
     <title>BitWeb</title>
 </head>
 <body>
-    <div class="page_container">
+    <div class="page_container" id="page_container">
         <div class="header">
             <a href="index.html"><img src="./Images/LogoSize_Android_launcher_icon_ByTailorBrands/logo_size_invert.jpg" class="bitwebLogo" id="bitwebLogo"></a>
 
@@ -43,10 +43,10 @@
                 <h1>Services</h1>
                 <p>We offer a range of IT services, click the below tiles to find out more.</p>
                 <div>
-                    <a href="./assets/services.html" id="webConsultancy" class="serviceWidget">Web Consultancy</a>
-                    <a href="./assets/services.html" id="emailAssistance" class="serviceWidget">Email Assistance</a>
-                    <a href="./assets/services.html" id="socialMedia" class="serviceWidget">Social Media</a>
-                    <a href="./assets/services.html" id="networking" class="serviceWidget">Networking</a>
+                    <button id="webConsultancy" class="serviceWidget">Business website</button>
+                    <button id="emailAssistance" class="serviceWidget">Business email</button>  
+                    <button id="socialMedia" class="serviceWidget">Social Media</button>
+                    <a href="./assets/services.html" id="networking" class="serviceWidget">More</a>
                 </div>
             </div>
         </div>
@@ -67,6 +67,45 @@
                     <a href=""><img src="./Images/Facebook Icon.png" class="icon"></a>
                     <a href=""><img src="./Images/Instagram Icon.png" class="icon"></a>
                     <a href="""><img src="./Images/YouTube Icon.png" class="icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="webConsultancyModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Business website</h2>
+                    <span id="close-web" class="close">&times;</span>
+                </div>
+                <div>
+                    <p>Need a website to promote your business? BitWeb can create bespoke designs 
+                        including your own branding for use across multiple device types so that no matter 
+                        what device your client is using, they'll find what they're looking for easily and quickly.</p>
+                </div>
+            </div>
+        </div>
+        <div id="emailAssistanceModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Business email</h2>
+                    <span id="close-email" class="close">&times;</span>
+                </div>
+                <div>
+                    <p>Having trouble knowing where to start? 
+                        BitWeb can get you sorted with a professional business email to contact your clients.</p>
+                </div>
+            </div>
+        </div>
+        <div id="socialMediaModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Social Media</h2>
+                    <span id="close-social" class="close">&times;</span>
+                </div>
+                <div>
+                    <p>Increase your social presence. 
+                        We can utilise so many tools and features on multiple social platforms to 
+                        maximise your impact and spread the word!</p>
                 </div>
             </div>
         </div>
@@ -99,6 +138,56 @@
         js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <script>
+        // When the user clicks on the button, open the modal
+        document.getElementById("webConsultancy").onclick = function() {
+            document.getElementById("webConsultancyModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+        document.getElementById("emailAssistance").onclick = function() {
+            document.getElementById("emailAssistanceModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+        document.getElementById("socialMedia").onclick = function() {
+            document.getElementById("socialMediaModal").style.display = "block";
+            document.getElementById("page_container").classList = "page_container-modal";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        document.getElementById("close-web").onclick = function() {
+        document.getElementById("webConsultancyModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+        document.getElementById("close-email").onclick = function() {
+        document.getElementById("emailAssistanceModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+        document.getElementById("close-social").onclick = function() {
+        document.getElementById("socialMediaModal").style.display = "none";
+        document.getElementById("page_container").classList = "page_container";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("webConsultancyModal")) {
+            document.getElementById("webConsultancyModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+        }
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("emailAssistanceModal")) {
+            document.getElementById("emailAssistanceModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+        }
+        window.onclick = function(event) {
+        if (event.target == document.getElementById("socialMediaModal")) {
+            document.getElementById("socialMediaModal").style.display = "none";
+            document.getElementById("page_container").classList = "page_container";
+        }
+        }
     </script>
     </div>
 </body>
