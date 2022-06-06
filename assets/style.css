@@ -163,9 +163,10 @@ li {
 }
 
 .serviceWidget {
-    border-radius: 50rem;
+    border-radius: 5rem;
     font-size: 1rem;
     margin: 0.5rem;
+    font-weight: 500;
     padding: 0.7rem;
     border: 2px solid #414141;
     text-decoration: none;
@@ -174,13 +175,14 @@ li {
     text-align: center;
     transition: 0.3s;
 }
-:hover.serviceWidget {
+.serviceWidget:hover {
     background-color: #005B06;
     color: white;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
 }
+
 
 .tContainer {
     position: relative;
@@ -370,6 +372,19 @@ li {
       grid-template-columns: 95% 5%;
   }
 
+  .sb1 {
+      display:block;
+      position: relative;
+  }
+  .sb2 {
+      display: none;
+  }
+  .service-icon {
+      width: 1.5rem;
+      position: relative;
+      margin-bottom: -7px;
+  }
+
 
 @media screen and (min-width: 1100px) {
     .header {
@@ -424,7 +439,7 @@ li {
     }
  
     .serviceWidget {
-        width: 70%;
+        width: 50%;
     }
 
     .testimonials {
@@ -446,5 +461,11 @@ li {
     }
     .services2 {
         width: 70%;
+    }
+    .sb1 {
+        display: none;
+    }
+    .sb2 {
+        display: block;
     }
 }
