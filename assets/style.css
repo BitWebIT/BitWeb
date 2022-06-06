@@ -178,8 +178,10 @@ li {
 .serviceWidget:hover {
     background-color: #005B06;
     color: white;
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: inset 0px 0px 5px white;
+    border-color: transparent;
     cursor: pointer;
 }
 
@@ -384,7 +386,21 @@ li {
       position: relative;
       margin-bottom: -7px;
   }
-
+  .portrait {
+      width: 90%;
+      position: relative;
+      border-radius: 0.5rem;
+  }
+  .about-info {
+      display: flex;
+      flex-direction: column;
+  }
+  .portrait-container {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
 
 @media screen and (min-width: 1100px) {
     .header {
@@ -467,5 +483,16 @@ li {
     }
     .sb2 {
         display: block;
+    }
+    .about-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .portrait {
+        height: 32rem;
+        width: 32rem;
+        margin-right: 8rem;
+        margin-top: 5rem;
+        box-shadow: 5px 5px 10px black;
     }
 }
