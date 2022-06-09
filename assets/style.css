@@ -63,7 +63,6 @@ li {
     margin: 0.5rem 0rem 0.5rem 0.5rem;
     position: relative;
     border-radius: 0.3rem;
-    box-shadow: 0px 0px 5px #414141;
 }
 
 .navBarDesktop {
@@ -166,25 +165,23 @@ li {
 
 .serviceWidget {
     border-radius: 5rem;
+    font-family: 'Comfortaa', cursive !important;
     font-size: 1rem;
     margin: 0.5rem;
-    font-weight: 500;
+    font-weight: 400 !important;
     padding: 0.7rem;
     border: 2px solid #414141;
     text-decoration: none;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    transition: 0.3s;
+    background-color: #006a8d;
+    color: white;
+    box-shadow: inset 0px 0px 5px white;
+    border: 2px solid white;
 }
 .serviceWidget:hover {
-    background-color: #005B06;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    box-shadow: inset 0px 0px 5px white;
-    border-color: transparent;
-    cursor: pointer;
+    background-color: #002a38;
 }
 
 
@@ -412,12 +409,8 @@ li {
     .bitwebLogo {
         width: 10%;
         position: fixed;
-        box-shadow: -5px 5px 10px #414141;
-        transition: 0.3s;
     }
-    :hover.bitwebLogo {
-        box-shadow: 0px 0px 5px black;
-    }
+
 
     .navBarDesktop {
         margin-top: 2rem;
@@ -441,7 +434,7 @@ li {
         border-bottom: 2px solid transparent;
     }
     :hover.navItem {
-        border-bottom: 2px solid #005B06;
+        border-bottom: 2px solid #006a8d;
         color: #000000;
         font-weight: 900;
         padding-bottom: 0.6rem;
@@ -458,6 +451,19 @@ li {
  
     .serviceWidget {
         width: 50%;
+        background-color: rgb(201, 201, 201);
+        border: 2px solid black;
+        color: black;
+        transition: 0.3s;
+    }
+    .serviceWidget:hover {
+        background-color: #006a8d;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: inset 0px 0px 5px white;
+        border: 2px solid white;
+        cursor: pointer;
     }
 
     .testimonials {
