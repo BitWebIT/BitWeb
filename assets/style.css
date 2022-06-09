@@ -1,5 +1,6 @@
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -493,7 +494,7 @@ li {
         height: 32rem;
         width: 32rem;
         margin-right: 8rem;
-        margin-top: 5rem;
+        margin-top: 0%;
         box-shadow: 5px 5px 10px black;
     }
 }
