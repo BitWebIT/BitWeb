@@ -320,6 +320,7 @@ li {
     font-family: 'Comfortaa', cursive !important;
     margin-top: 1rem;
     padding: 0.5rem;
+    font-size: 1rem !important;
     border-top-right-radius: 0.3rem !important;
     border-top-left-radius: 0.3rem !important;
     border-color: transparent;
@@ -329,13 +330,28 @@ li {
     resize: none;
     word-wrap: normal;
 }
+#Message {
+    background-color: white;
+    transition: .3s;
+}
+#Message:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.contactForm input{
+    background-color: white;
+    transition: .3s;
+}
+.contactForm input:hover {
+    background-color: rgb(247, 247, 247);
+}
 .contactForm button {
     font-family: 'Comfortaa', cursive !important;
     margin-top: 1rem;
     padding: 0.5rem;
     width: 30%;
     border-radius: 0.3rem;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 3px 3px 10px black;
     background-color: #006a8d;
     color: white;
     border: 1px solid white;
@@ -533,7 +549,7 @@ a:hover {
     }
     .contactForm button:hover {
         box-shadow: 0px 0px 0px black;
-        border: 0px;
+        border: 2px solid #006a8d;
         cursor: pointer;
     }
 
