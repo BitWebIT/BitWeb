@@ -65,8 +65,8 @@ li {
     border-radius: 50%;
     box-shadow: 0 0 3px rgb(54, 54, 54);
     padding: 0px;
-    top: 0%;
-    left:0rem;
+    top: 0.5rem;
+    left:0.5rem;
 }
 
 .navBarDesktop {
