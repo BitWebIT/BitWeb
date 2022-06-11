@@ -316,6 +316,11 @@ li {
     transform: scale(120%);
     filter: saturate(0);
 }
+.fa-circle-xmark {
+    position: relative;
+    top: .5rem;
+    right: .5rem;
+}
 
 .formContainer {
     display: flex;
@@ -487,7 +492,9 @@ a:hover {
         width: 10%;
         position: fixed;
     }
-
+    .fa-circle-xmark {
+        right: 0rem;
+    }
 
     .navBarDesktop {
         margin-top: 2rem;
