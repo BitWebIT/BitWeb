@@ -6,6 +6,8 @@ html {
 
 .page_container {
     position: fixed;
+    display: flexbox;
+    flex-grow: 1;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -17,10 +19,12 @@ html {
 }
 .page_container-modal {
     position: fixed;
+    display: flexbox;
+    flex-grow: 1;
     top: 0px;
     left: 0px;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(0deg, #dfdfdf, #ffffff);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +38,9 @@ html {
     100% {
         filter: blur(2px);
     }
+}
+.fa-brands {
+    transform: scale(150%);
 }
 
 hr {
@@ -53,7 +60,7 @@ li {
     display: grid;
     grid-template-columns: 25% 75%;
     position: fixed;
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), white);
+    background-color: white;
     z-index: 1;
     overflow:auto;
 }
@@ -79,13 +86,9 @@ li {
     justify-content: space-evenly;
     grid-column: 2;
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 1rem;
 }
-.navItemMobile {
-    object-fit: cover;
-    width: 2rem;
-    filter: saturate(0);
-}
+
 
 .welcomeContainer {
     position: relative;
@@ -207,8 +210,8 @@ li {
 }
 
 .contactContainer {
-    position: static;
-    bottom: 0px;
+    position:relative;
+    bottom: 0vh;
     justify-content: center;
     justify-items: center;
     display: flex;
@@ -218,7 +221,9 @@ li {
 .contact {
     width: 100%;
     background-color: white;
-    padding-bottom: 5rem;
+}
+.social-icons {
+    padding-bottom: 2rem;
 }
 .link {
     color: #005B06;
@@ -304,6 +309,10 @@ li {
 }
 :hover.icon {
     filter: invert(100%);
+}
+
+.fa-solid {
+    transform: scale(120%);
 }
 
 .formContainer {
@@ -536,6 +545,10 @@ a:hover {
     .testimonials {
         width: 70%;
     }
+
+    .contactContainer {
+        position: relative;
+    }
     .contact {
         padding-bottom: 0rem;
         width: 90%;
@@ -584,5 +597,8 @@ a:hover {
     }
     .close {
         right: -2rem;
+    }
+    .social-icons {
+        padding-bottom: 3rem;
     }
 }

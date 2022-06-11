@@ -23,10 +23,10 @@
                 <a href="./assets/contact.html" class="navItem" id="navContact">Contact</a>
             </nav>
             <nav class="navBarMobile">
-                <li><a href="index.html"><img src="./Images/Home Icon.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="./assets/about.html"><img src="./Images/About Icon.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="./assets/services.html"><img src="./Images/Services Icon 2.png" alt="" class="navItemMobile"></a></li>
-                <li><a href="./assets/contact.html"><img src="./Images/Contact Icon.png" alt="" class="navItemMobile"></a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./assets/about.html"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="./assets/services.html"><i class="fa-solid fa-computer"></i></a></li>
+                <li><a href="./assets/contact.html"><i class="fa-solid fa-phone"></i></a></li>
             </nav>
         </div>
         <div class="welcomeContainer">
@@ -65,10 +65,10 @@
                 <div class="contactinfo">
                     <h1><a href="./assets/contact.html">Contact</a></h1>                    
                 </div> 
-                <div>
-                    <a href=""><img src="./Images/Facebook Icon.png" class="icon"></a>
-                    <a href=""><img src="./Images/Instagram Icon.png" class="icon"></a>
-                    <a href=""><img src="./Images/YouTube Icon.png" class="icon"></a>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -111,6 +111,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://kit.fontawesome.com/bba4cc1124.js" crossorigin="anonymous"></script>
       <script>
         // When the user clicks on the button, open the modal
         document.getElementById("webConsultancy").onclick = function() {
@@ -158,6 +159,10 @@
         if (event.target == document.getElementById("socialMediaModal")) {
             document.getElementById("socialMediaModal").style.display = "none";
             document.getElementById("page_container").classList = "page_container";
+        }
+
+        document.getElementById("about").onclick = function() {
+            window.location.replace("./assets/about.html");
         }
         }
     </script>
