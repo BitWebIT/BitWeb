@@ -60,9 +60,10 @@ li {
     display: grid;
     grid-template-columns: 25% 75%;
     position: fixed;
-    background-color: white;
+    background-image: linear-gradient(180deg, white 0 60%, transparent 99% 100%);
     z-index: 1;
     overflow:auto;
+    padding-bottom: .5rem;
 }
 
 .bitwebLogo {
@@ -313,6 +314,7 @@ li {
 
 .fa-solid {
     transform: scale(120%);
+    filter: saturate(0);
 }
 
 .formContainer {
